@@ -1,0 +1,38 @@
+<div class="container auth-container">
+    <div class="card">
+        <div class="card-content">
+            <h3><i class="fas fa-sign-in-alt"></i> Login</h3>
+            <div class="section">
+                <p class="lead">Just a testing application used for practicing Node.JS</p>
+            </div>
+            <form method="POST" action="/auth/login">
+                <div class="row">
+                    <div class="input-field">
+                        <input id="identification" name="identification" type="text" class="validate" />
+                        <label for="identification">Email / Username</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field">
+                        <input id="password" name="password" type="password" class="validate" />
+                        <label for="password">Password</label>
+                    </div>
+                </div>
+                <button class="btn grey darken-4 auth-btn" type="submit">Submit</button>
+            </form>
+
+            <div class="section">
+                Don't Have an Account?
+                <a href="/auth/register">Register</a>
+            </div>
+            <div class="separator">Or</div>
+            <div class="section">
+                <a href="/auth/github" class="btn grey darken-4 auth-btn">
+                    <i class="fab fa-github left"></i>
+                    Sign In with Github
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
